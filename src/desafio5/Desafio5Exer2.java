@@ -13,17 +13,15 @@ public class Desafio5Exer2 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         
-        int numC = 1, num = 1000, numResto5 = 0;
+        int numC = 1, num = 1000;
         
         while (numC <= 999) {
             
-            if (num % 11 == 5) {numResto5++;}
+            if (num % 11 == 5) {System.out.println(num);}
 
             num++;               
             numC++;
         }
         
-        System.out.println("O total de números tem resto 5 "
-                + "na divisão por 11 é: "+numResto5);
     }
 }
