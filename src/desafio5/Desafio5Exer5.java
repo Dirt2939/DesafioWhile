@@ -37,6 +37,8 @@ public class Desafio5Exer5 {
             else if (num < 0) {
                 numC++;
             }
+            else { System.out.println("Intervalo não contabilizado,"
+                    + " precisa ser de [0,100]"); }
         }
         
         System.out.println("Intervalo [0,25]: "+intervalo1+"\nIntervalo "

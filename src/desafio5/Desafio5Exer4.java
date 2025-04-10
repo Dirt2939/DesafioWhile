@@ -5,6 +5,7 @@ imprima quantos anos serão necessários para que Zé seja maior que Chico.
  */
 package desafio5;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
@@ -12,8 +13,9 @@ import java.util.Scanner;
  */
 public class Desafio5Exer4 {
     public static void main(String[] args) {
+        DecimalFormat decimal = new DecimalFormat("0.00");
         
-        double chico = 1.50, ze = 1.10, chicoAno = 0.2, zeAno = 0.3;
+        double chico = 1.50, ze = 1.10, chicoAno = 0.02, zeAno = 0.03;
         int ano = 0;
         
         while (chico >= ze) {
@@ -21,9 +23,11 @@ public class Desafio5Exer4 {
             ano++;
             ze = ze + zeAno;
             chico = chico + chicoAno;
+            System.out.println("Zé: "+decimal.format(ze)+" | Chico: "
+                    + ""+decimal.format(chico)+" | ano: "+ano);
             
         }
         
-        System.out.println("Precisa de "+ano+" anos para Zé ser maior que Chico");
+        System.out.println("Zé levou "+ano+" anos para ser maior que Chico");
     }
 }
